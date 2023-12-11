@@ -16,7 +16,7 @@ export default function Switcher() {
  
     return (
         <>
-            <div className="flex flex-row justify-self-end toggle px-2">
+            <div className="flex fixed right-0 flex-row toggle px-2 py-2">
             <label htmlFor="dark-toggle" className="flex items-center cursor-pointer">
                     <div className="relative">
                         <input type="checkbox" onChange={toggleDarkMode} name="dark-mode" id="dark-toggle"  className="checkbox hidden" checked={darkSide} />
