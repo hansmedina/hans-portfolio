@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
- 
+
 export default function useDarkSide() {
     const [theme, setTheme] = useState(localStorage.theme);
     const colorTheme = theme === "dark" ? "light" : "dark";
@@ -12,6 +12,6 @@ export default function useDarkSide() {
             localStorage.removeItem("theme");
         else localStorage.setItem("theme", theme);
     }, [theme, colorTheme]);
- 
+    
     return [colorTheme, setTheme];
 }
